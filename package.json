@@ -1,0 +1,11 @@
+{
+  "name": "imagify-nodejs",
+  "version": "0.0.0",
+  "description": "A TypeScript-based NPM package to use the Imagify API with NodeJS projects.",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
