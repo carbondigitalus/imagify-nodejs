@@ -1,25 +1,27 @@
-export enum LineType {
-  comment = 'comment',
-  userAgent = 'user-agent',
-  allow = 'allow',
-  disallow = 'disallow',
-  sitemap = 'sitemap',
-  crawlDelay = 'crawl-delay',
-  blank = 'blank',
-  other = 'other'
+export interface ImageParams {
+  image: any; // don't have a binary type
+  data?: DataParams;
 }
 
-export interface LineSplit {
-  directive?: string;
-  value: string;
+export interface DataParams {
+  normal?: boolean;
+  aggressive?: boolean;
+  ultra?: boolean;
+  keep_exif?: boolean;
+  resize?:
+    | boolean
+    | {
+        width?: number;
+        height?: number;
+        percentage?: number;
+      };
 }
 
-export interface Line {
-  type: LineType;
-  content: LineSplit | string;
-}
-
-export enum ReturnType {
-  console = 'console',
-  browser = 'browser'
+export interface UploadResponse {
+  code: number;
+  image: string;
+  new_size: number;
+  original_size: number;
+  percent: number;
+  success: boolean;
 }

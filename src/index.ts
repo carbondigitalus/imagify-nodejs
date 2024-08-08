@@ -1,18 +1,9 @@
 // Custom Modules
-import { ReturnType } from './options';
-import { RobotsParser } from './robots';
+import { ImageParams, UploadResponse } from './options';
+import { ImageOptimizer } from './image-optimizer';
 
-export default async function robotsParser(returnType: `${ReturnType}`, filePath: string) {
-  // execute class for variable usage
-  const robotsParser = new RobotsParser();
-  if (returnType === ReturnType.console) {
-    // console.log method
-    return robotsParser.logFile(filePath);
-  }
-  if (returnType === ReturnType.browser) {
-    // format array method
-    const data = await robotsParser.parseFile(filePath);
-    return data;
-  }
-  return;
+export default async function robotsParser(filePath: string, options?: ImageParams) {
+  const imagify = new ImageOptimizer();
+  const imagifyResponse: UploadResponse = await imagify.optimizeImage(filePath, options);
+  return imagifyResponse;
 }
