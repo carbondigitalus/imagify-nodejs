@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-We want to ensure that all SEM Links projects are secure for everyone. If you've discovered a security vulnerability,
+We want to ensure that all our projects are secure for everyone. If you've discovered a security vulnerability,
 we appreciate your help in disclosing it to us in a [responsible manner][link-responsible-disclosure].
 
 Publicly disclosing a vulnerability can put the entire community at risk. If you've discovered a security concern,
