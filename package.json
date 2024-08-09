@@ -24,7 +24,6 @@
     "build": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib/",
     "cm": "cz",
-    "lint": "eslint ./src/ --fix",
     "npm:publish": "npm run clean && npm run build && npm publish --access public",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
