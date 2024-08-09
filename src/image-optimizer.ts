@@ -16,7 +16,7 @@ export class ImageOptimizer {
       headers: { Authorization: `token ${process.env.API_KEY}` },
       data: {
         image: imageFile,
-        data: options || {}
+        data: options != null || {}
       }
     })
       .then((res) => {
@@ -25,6 +25,6 @@ export class ImageOptimizer {
       })
       .catch((error: Error) => {
         console.log('Error Received:\n', error);
-      });
+      })
   }
 }
