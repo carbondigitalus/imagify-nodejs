@@ -1,6 +1,6 @@
 {
   "name": "imagify-nodejs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A TypeScript-based NPM package to use the Imagify API with NodeJS projects.",
   "author": {
     "name": "Carbon Digital",
